@@ -88,7 +88,7 @@
 .carousel-control-prev i,
 .carousel-control-next i { 
     color: #111;
-    font-size: 3em; /* aumenta tam do botao de prox e anterior do slide */
+    font-size: 4em; /* aumenta tam do botao de prox e anterior do slide */
 }
 
 .carousel-indicators [data-bs-target] {
@@ -144,4 +144,10 @@
 #mini-banners .btn {
     margin-top: 1.5em;
     padding: 0.6em 1.2em;
+}
+
+@media(min-width: 768px) {
+   #mini-banners {
+    margin-top: -6em; /* sobreposicao nos sliders */
+   }
 }
