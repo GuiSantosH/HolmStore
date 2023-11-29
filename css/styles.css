@@ -99,3 +99,23 @@
 .carousel-indicators .active {
     background-color: #000;
 }
+
+@media(min-width: 768px) {
+    #slider .carousel-caption {
+        bottom: 15em; /* sobe descricao de slide de carousel */
+    }
+    
+    #slider .carousel-caption h5 {
+        font-size: 4em;
+        text-shadow: #000 2px 3px; /* sombreado de descricao de slide */
+    }
+
+    #slider .btn {
+        padding: 0.6 1.6em;
+        font-size: 1.2em;
+    }
+
+    .carousel-indicators {
+        bottom: 7em;
+    }
+}
