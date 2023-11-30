@@ -61,4 +61,16 @@ $(document).ready(function () {
     $('#cart-items').on('click', '.remove-item', function () {
         $(this).closest('tr').remove();
     });
+
+    //Funçao para limpar carrinho
+    function clearCart() {
+        $('#cart-items').empty(); // Limpa os itens do carrinho
+        updateCartTotal(); // Zera o total do carrinho
+        $('#cart-message').text('Carrinho limpo!');
+    }
+
+    // Adiciona um evento de clique ao botão "Limpar Carrinho"
+    $('#clear-cart-btn').click(function () {
+        clearCart();
+    });
 });
